@@ -1,4 +1,7 @@
-
+.logo{
+  height:20px;
+  margin-top:6px;
+}
 .no-js {
   @include breakpoint(small only) {
     .top-bar {
@@ -27,13 +30,13 @@
 
 .sticky{
   width:100%;
-  background:$bg;
+  background:transparent;
 }
 
 .menu li {
    white-space:nowrap;
 }
 .menu li a.active {
-  border: 1px solid white;
+  background: $menuitembg;
 }
 

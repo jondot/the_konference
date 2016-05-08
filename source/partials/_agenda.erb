@@ -3,7 +3,7 @@
       <thead>
         <tr>
           <td>&nbsp;</td>
-          <% data.calendar.rooms.each do |label, name| %>
+          <%puts data.to_h; data.calendar.rooms.each do |label, name| %>
             <td><%= name %></td>
           <% end %>
         </tr>
@@ -17,8 +17,27 @@
 
             <% data.calendar.tracks.each do |room, track| %>
               <td>
+
+
                 <% session = track[index] %>
-                <%= session.talk || "NA" %>
+                <% speaker = data.speakers[session.speaker] %>
+                <div class="session">
+                  <div class="session__title">
+                    <%= session.title || "NA" %>
+                  </div>
+                  <% if speaker %>
+                    <div class="hcard hcard-top">
+                      <img class="hcard__img" src="<%=image_path(speaker.image)%>">
+                      <div class="hcard__body">
+                        <div class="hcard__title">
+                          <%= speaker.name %>
+                        </div>
+                      </div>
+                    </div>
+                  <% end %>
+                </div>
+
+
               </td>
             <% end %>
           </tr>
@@ -47,7 +66,7 @@
 
                 <% session = data.calendar.tracks[label][index] %>
                 <td>
-                  <%= session.talk || "NA" %>
+                  <%= session.title || "NA" %>
                 </td>
               </tr>
             <% end %>

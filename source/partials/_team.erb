@@ -1,0 +1,20 @@
+
+<div class="row section">
+  <h1>The Team</h1>
+
+<% data.speakers.each do |handle, speaker| %>
+    <div class="vcard">
+      <img class="vcard__img" src="<%= image_path speaker.image %>"/>
+      <div class="vcard__body">
+        <div class="vcard__title">
+          <%= speaker.name %>
+        </div>
+        <p>
+          <%= markdown speaker.bio %>
+        </p>
+      </div>
+  </div>
+<% end %>
+
+</div>
+<img src="<%= image_path 'invaders.png' %>" style="width:200px; height:200px;position:absolute; right:30px; bottom:-2px"/>

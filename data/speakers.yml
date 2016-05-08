@@ -1,20 +1,20 @@
-- id: 1
-  name: Fatih Kadir Akın
+jondot:
+  name: Dotan Nahum
+  image: jondot.jpg
   work: 
-    company: webBox
-    title: Developer
-  bio: hello world
+    company: Klarna
+  bio: Some Bio
        adasd
   social:
-    twitter: fkadev
-    github: f
+    twitter: jondot
+    github: jondot
 
-- id: 2
-  name: Ugur Ozyilmazel
+unativ:
+  name: Uri Nativ
+  image: unativ.jpg
   work:
-    company: webBox
-    title: Developer
+    company: Klarna
   bio: hello
        world **bold** _italic_
   social:
-    dribble: vigo
+    twitter: unativ

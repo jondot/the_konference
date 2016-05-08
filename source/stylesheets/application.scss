@@ -4,24 +4,30 @@
 
 @include foundation-everything;
 
-$bg:#272829;
-$fg:white;
-$venue: 'http://www.sweetspotevents.se/wp-content/uploads/2015/03/clarion-hotel-sign-stockholm-02-6f.jpg';
 
 @import 'navigation';
 
 
 body {
-  background: $bg;
   color:$fg;
+  background: $bg url('/images/herobg.jpg') no-repeat;
 }
 
 .hero {
   text-align:center;
+  h1{
+    font-size: 5em;
+    small{
+      margin-top:0.5em;
+    }
+  }
   .button{
     font-size: 1.5em;
     margin:1em;
   }
+}
+.hero__footer{
+   margin-top:3em;
 }
 //sections
 .section{
@@ -37,8 +43,59 @@ body {
   }
 }
 
-#the-konferense{
-  padding: 8em 4em;
+.session{
+  margin: 2em 0;
+}
+.session__title{
+}
+.hcard{
+}
+.hcard-top{
+  margin-top:2em;
+}
+.hcard__img{
+  float:left;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.hcard__body{
+  margin-left: 40px;
+}
+.hcard__title{
+  padding-top:3px;
+}
+
+
+
+
+.vcard{
+  text-align: center;
+  width: 13rem;
+  height: 18rem;
+  border: 1px solid $fg;
+  padding: 2em 3em;
+  border-radius: 1em;
+  float: left;
+  margin:1em;
+}
+.vcard-light{
+  border: 1px solid $bg;
+}
+.vcard__img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.vcard__body{
+}
+.vcard__title{
+}
+
+
+
+#the-konference{
+  padding: 8em 0em;
 }
 
 #agenda{
@@ -50,6 +107,9 @@ body {
   @include breakpoint(small only) {
     display: none;
   }
+  table{
+    margin:0
+  }
 }
 
 .agenda__small{
@@ -58,11 +118,21 @@ body {
     display: block;
   }
 }
-
-#venue{
-  background: url($venue)
+.agenda__slot{
+   vertical-align:top;
 }
 
+#venue{
+  background: url($venue);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.venue__map{
+  float:right;
+  @include breakpoint(small only) {
+    float: none;
+  }
+}
 .venue__address{
   padding: 3em;
   h2, h3, h4 {
@@ -72,5 +142,41 @@ body {
   }
 }
 
+#speakers{
+  background: $fg;
+  color:$bg;
+  position:relative;
+}
 
 
+#why{
+  background: url('/images/astbg.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+
+#how{
+  background: $fg;
+  color:$bg;
+}
+.how__item{
+  text-align:center;
+  img{
+    height:150px;
+    width:150px;
+    padding:2em;
+  }
+  p{
+    text-align:left;
+  }
+}
+
+
+#footer{
+   background:#000;
+   padding:3em;
+   text-align:center;
+   img{
+     margin-top:0;
+   }
+}

@@ -12,68 +12,58 @@ times:
     end: "13:30"
 
 rooms:
-  "room-1": Red Room
-  "room-2": Blue Room
-  "room-3": Green Room
+  "room-1": 'Red Room'
+  "room-2": 'Blue Room'
+  "room-3": 'Green Room'
 
 tracks:
   "room-1":
     - type: break
-      description: Registration
       icon: barcode
-
+      title: Registration
     - type: talk
-      speaker: Speaker 1
-      talk: hello world
+      speaker: jondot
+      title: Hiring Developers, with Science!
       abstract: some strange things that you
-                **asd**
-
     - type: talk
-      speaker: Speaker 2
-      talk: responsive web
+      speaker: unativ
+      title: 'Internships: Good for the intern, Great for the team'
       abstract: oo cool things.
-
-    - type: break
-      description: Lunch
-      icon: cutlery
+    - type: talk
+      speaker: jondot
+      title: 'Booting Up: Hiring and Growing Boot Camp Graduates'
 
   "room-2":
     - type: break
-      description: Registration
       icon: barcode
-
+      title: Registration
     - type: talk
-      speaker: Speaker 3
-      talk: Mobile Apps
+      speaker: unativ
+      title: Your First Legacy Codebase
       abstract: everything is an app
-
-
     - type: talk
-      speaker: null
-      talk: null
+      speaker: jondot
+      title: Pat Packet Visits Ruby Rails
+      abstract: null
+    - type: talk
+      speaker: unativ
+      talk: 'Level-up Your ActiveRecord Skills: Learn SQL!'
       abstract: null
 
-    - type: talk
-      speaker: null
-      talk: null
-      abstract: null
   "room-3":
     - type: break
-      description: Registration
+      title: Registration
       icon: barcode
-
     - type: talk
-      speaker: null
-      talk: null
+      speaker: jondot
+      title: 'I Can’t Believe It’s Not A Queue: Using Kafka with Rails'
+      abstract: null
+    - type: talk
+      speaker: unativ
+      title: The Rails Boot Process
+      abstract: null
+    - type: talk
+      speaker: jondot
+      title: How We Deploy Shopify
       abstract: null
 
-      
-    - type: talk
-      speaker: null
-      talk: null
-      abstract: null
-
-    - type: talk
-      speaker: null
-      talk: null
-      abstract: null
