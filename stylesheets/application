@@ -3,17 +3,17 @@ Error: File to import not found or unreadable: foundation-sites/scss/util/util.
         on line 43 of /Users/dotan.nahum/experiments/the_konference/source/stylesheets/_settings.scss
         from line 2 of /Users/dotan.nahum/experiments/the_konference/source/stylesheets/application.scss
 
-38: }
-39: 
-40: #the-konferense{
-41:   padding: 8em 4em;
-42: }
-43: 
-44: #agenda{
-45:   background: $fg;
-46:   color: $bg;
-47: }
-48: .agenda__large{
+38:     text-align: center;
+39:     small{
+40:       display:block;
+41:       font-size: 0.5em;
+42:     }
+43:   }
+44: }
+45: 
+46: .session{
+47:   margin: 2em 0;
+48: }
 
 Backtrace:
 /Users/dotan.nahum/experiments/the_konference/source/stylesheets/_settings.scss:43
@@ -147,4 +147,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: foundation-sites/scss/util/util.\A         on line 43 of /Users/dotan.nahum/experiments/the_konference/source/stylesheets/_settings.scss\A         from line 2 of /Users/dotan.nahum/experiments/the_konference/source/stylesheets/application.scss\A \A 38: }\A 39: \A 40: #the-konferense{\A 41:   padding: 8em 4em;\A 42: }\A 43: \A 44: #agenda{\A 45:   background: $fg;\A 46:   color: $bg;\A 47: }\A 48: .agenda__large{"; }
+  content: "Error: File to import not found or unreadable: foundation-sites/scss/util/util.\A         on line 43 of /Users/dotan.nahum/experiments/the_konference/source/stylesheets/_settings.scss\A         from line 2 of /Users/dotan.nahum/experiments/the_konference/source/stylesheets/application.scss\A \A 38:     text-align: center;\A 39:     small{\A 40:       display:block;\A 41:       font-size: 0.5em;\A 42:     }\A 43:   }\A 44: }\A 45: \A 46: .session{\A 47:   margin: 2em 0;\A 48: }"; }
