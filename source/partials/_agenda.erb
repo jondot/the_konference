@@ -1,0 +1,62 @@
+  <div class="agenda__large">
+    <table>
+      <thead>
+        <tr>
+          <td>&nbsp;</td>
+          <% data.calendar.rooms.each do |label, name| %>
+            <td><%= name %></td>
+          <% end %>
+        </tr>
+      </thead>
+      <tbody>
+        <% data.calendar.times.each_with_index do |time, index| %>
+          <tr>
+            <th class="agenda__slot">
+              <p><%= time.start%> - <%= time.end %></p>
+            </th>
+
+            <% data.calendar.tracks.each do |room, track| %>
+              <td>
+                <% session = track[index] %>
+                <%= session.talk || "NA" %>
+              </td>
+            <% end %>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="agenda__small">
+    <ul class="tabs" id="agenda__tabs" data-tabs>
+      <% data.calendar.rooms.each_with_index do |(label, name), tli| %>
+        <li class="tabs-title <%= tli==0 && 'is-active'%>"><a href="#<%=label %>"><%= name %></a></li>
+      <% end %>
+    </ul>
+
+    <div class="tabs-content" data-tabs-content="agenda__tabs">
+    <% data.calendar.rooms.each_with_index do |(label, name), tci| %>
+      <div class="tabs-panel <%= tci==0 && 'is-active'%>" id="<%=label%>">
+        <table>
+          <tbody>
+            <% data.calendar.times.each_with_index do |time, index| %>
+              <tr>
+                <th class="agenda__slot">
+                  <p><%= time.start%> - <%= time.end %></p>
+                </th>
+
+                <% session = data.calendar.tracks[label][index] %>
+                <td>
+                  <%= session.talk || "NA" %>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    <% end %>
+    </div>
+  </div>
+
+
+

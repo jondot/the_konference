@@ -1,0 +1,24 @@
+title: The Konferense
+date: September, 2016
+
+venue:
+  name: Clarion Sign
+  address: Östra Järnvägsgatan 35, 101 26 Stockholm, Sweden
+  coords: 59.334715,18.052936
+
+contact:
+  mail: thekonferense@klarna.com
+
+social:
+  twitter: thekonferense
+  facebook: thekonferense
+
+event:
+  eventbrite: http://thekonferense2016.eventbrite.com
+  lanyrd: http://lanyrd.com/2016/thekonferense
+
+meta:
+  description: a conference
+  keywords: a, b, c
+
+debug: false

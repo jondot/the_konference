@@ -1,0 +1,76 @@
+@import 'vars';
+@import 'settings';
+@import 'foundation-sites/scss/foundation';
+
+@include foundation-everything;
+
+$bg:#272829;
+$fg:white;
+$venue: 'http://www.sweetspotevents.se/wp-content/uploads/2015/03/clarion-hotel-sign-stockholm-02-6f.jpg';
+
+@import 'navigation';
+
+
+body {
+  background: $bg;
+  color:$fg;
+}
+
+.hero {
+  text-align:center;
+  .button{
+    font-size: 1.5em;
+    margin:1em;
+  }
+}
+//sections
+.section{
+  padding: 5em 1em;
+}
+.section{
+  h1, h2, h3{
+    text-align: center;
+    small{
+      display:block;
+      font-size: 0.5em;
+    }
+  }
+}
+
+#the-konferense{
+  padding: 8em 4em;
+}
+
+#agenda{
+  background: $fg;
+  color: $bg;
+}
+.agenda__large{
+  display:block;
+  @include breakpoint(small only) {
+    display: none;
+  }
+}
+
+.agenda__small{
+  display:none;
+  @include breakpoint(small only) {
+    display: block;
+  }
+}
+
+#venue{
+  background: url($venue)
+}
+
+.venue__address{
+  padding: 3em;
+  h2, h3, h4 {
+    background: rgba(0,0,0,0.4);
+    display:inline-block;
+    padding: 0.2em;
+  }
+}
+
+
+

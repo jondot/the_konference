@@ -1,0 +1,20 @@
+- id: 1
+  name: Fatih Kadir Akın
+  work: 
+    company: webBox
+    title: Developer
+  bio: hello world
+       adasd
+  social:
+    twitter: fkadev
+    github: f
+
+- id: 2
+  name: Ugur Ozyilmazel
+  work:
+    company: webBox
+    title: Developer
+  bio: hello
+       world **bold** _italic_
+  social:
+    dribble: vigo

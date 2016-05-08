@@ -1,0 +1,79 @@
+times:
+  - start: "08:00"
+    end: "09:00"
+
+  - start: "09:00"
+    end: "09:40"
+
+  - start: "09:00"
+    end: "10:40"
+
+  - start: "12:00"
+    end: "13:30"
+
+rooms:
+  "room-1": Red Room
+  "room-2": Blue Room
+  "room-3": Green Room
+
+tracks:
+  "room-1":
+    - type: break
+      description: Registration
+      icon: barcode
+
+    - type: talk
+      speaker: Speaker 1
+      talk: hello world
+      abstract: some strange things that you
+                **asd**
+
+    - type: talk
+      speaker: Speaker 2
+      talk: responsive web
+      abstract: oo cool things.
+
+    - type: break
+      description: Lunch
+      icon: cutlery
+
+  "room-2":
+    - type: break
+      description: Registration
+      icon: barcode
+
+    - type: talk
+      speaker: Speaker 3
+      talk: Mobile Apps
+      abstract: everything is an app
+
+
+    - type: talk
+      speaker: null
+      talk: null
+      abstract: null
+
+    - type: talk
+      speaker: null
+      talk: null
+      abstract: null
+  "room-3":
+    - type: break
+      description: Registration
+      icon: barcode
+
+    - type: talk
+      speaker: null
+      talk: null
+      abstract: null
+
+      
+    - type: talk
+      speaker: null
+      talk: null
+      abstract: null
+
+    - type: talk
+      speaker: null
+      talk: null
+      abstract: null
