@@ -23,6 +23,8 @@ gem 'scss_lint', require: false
 
 gem 'stringex'
 
+gem 'middleman-deploy', git: 'https://github.com/middleman-contrib/middleman-deploy.git'
+
 group :development do
   gem 'byebug'
 end

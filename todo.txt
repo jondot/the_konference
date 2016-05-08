@@ -1,0 +1,2 @@
+[ ] optimize foundation requires (remove stuff we don't use, make assets smaller)
+

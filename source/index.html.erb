@@ -56,9 +56,6 @@ scripts:
     id = title.to_url 
 %>
 <div id="<%= id %>" class="container"  data-magellan-target="<%= id %>">
-  <% if data.global.debug %>
-  <a href="<%= api id %>" target="_self"><span class="label label-info">JSON API</span></a>
-  <% end %>
   <%= partial "partials/#{id}", locals: { id: id, subtext: subtext, title: title } %>
 </div>
 <% end %>

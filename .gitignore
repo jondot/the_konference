@@ -8,3 +8,4 @@ credentials.rb
 .idea/node_modules
 .tmp/
 node_modules/
+build/

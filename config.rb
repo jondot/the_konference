@@ -9,11 +9,11 @@ API_PREFIX = "/api/v1"
 GOOGLE_ANALYTICS = "UA-0000000-1"
 
 
-Dir["data/*"].each do |path|
-    name = File.basename path, DATA_EXT
-    proxy "#{API_PREFIX}/#{name}.json", "api.json",
-      :locals => { :collection => name }
-end
+#Dir["data/*"].each do |path|
+    #name = File.basename path, DATA_EXT
+    #proxy "#{API_PREFIX}/#{name}.json", "api.json",
+      #:locals => { :collection => name }
+#end
 
 require 'date'
 helpers do
@@ -37,9 +37,9 @@ helpers do
     duration_to_pixels(time.start, time.end)
   end
 
-  def api(page)
-    "#{API_PREFIX}/#{page}.json"
-  end
+#  def api(page)
+#    "#{API_PREFIX}/#{page}.json"
+#  end
 end
 
 activate :autoprefixer, browsers: [
@@ -58,7 +58,6 @@ activate :livereload
 configure :build do
 
   # "Ignore" JS and CSS so webpack has full control.
-  ignore { |path| path =~ /\/(.*)\.js|css$/ && $1 != "all" && $1 != "vendor" }
 
   # Minify Javascript on build
   activate :minify_javascript
@@ -67,7 +66,7 @@ configure :build do
   activate :minify_css
 
   # Enable cache buster
-  # activate :asset_hash
+  activate :asset_hash
 
   # Use relative URLs
   activate :relative_assets
@@ -75,3 +74,6 @@ configure :build do
   config[:relative_links] = true
 end
 
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+end
