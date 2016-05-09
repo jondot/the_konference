@@ -73,19 +73,19 @@ body {
   text-align: center;
   width: 13rem;
   height: 18rem;
-  border: 1px solid $fg;
+  border: 3px solid $fg;
   padding: 2em 3em;
-  border-radius: 1em;
   float: left;
   margin:1em;
 }
 .vcard-light{
-  border: 1px solid $bg;
+  border: 3px solid $bg;
 }
 .vcard__img{
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  margin-bottom:1em;
 }
 .vcard__body{
 }
@@ -163,6 +163,13 @@ body {
 #why{
   background: url('/images/astbg.png') no-repeat;
   background-size: 100% 100%;
+}
+.why__steps{
+  h1{
+    padding:0;
+    margin:0;
+    font-size:10em;
+  }
 }
 
 

@@ -1,7 +1,20 @@
 [ ] optimize foundation requires (remove stuff we don't use, make assets smaller)
-[ ] dedicated 'talks' page, all talks in one permalinkable page
+[ ] dedicated 'talks' page, all talks in one permalinkable page, including their full speaker
+    bio. this should be print ready
 [ ] better menu map handling - consider ditching googmaps
 [ ] animate menu bg color fades
 [ ] slickier footer
 [ ] replace person bg with more retro bg
+[ ] mobile view should be from medium up (replace all small breakpoints with medium)
+[ ] styling for mobile agenda
+[ ] export agenda as image/pdf for printing and mobile storage
+
+
+organizational
+
+[ ] event ticketing provider
+[ ] speakers: names, images, bios, socials
+[ ] schedule layout
+[ ] talks (obviously)
+[ ] final copy
 
