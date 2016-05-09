@@ -10,6 +10,7 @@
 [ ] export agenda as image/pdf for printing and mobile storage
 
 
+
 organizational
 
 [ ] event ticketing provider
@@ -17,4 +18,5 @@ organizational
 [ ] schedule layout
 [ ] talks (obviously)
 [ ] final copy
+[ ] og meta, favicon
 
